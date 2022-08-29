@@ -17,6 +17,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "postinstall": "husky install",
         "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
         "lint:fix": "eslint src/**.ts{,x} --fix"
     },
@@ -41,6 +42,8 @@
         "@typescript-eslint/eslint-plugin": "^5.35.1",
         "@typescript-eslint/parser": "^5.35.1",
         "eslint": "^8.23.0",
-        "eslint-plugin-react": "^7.31.1"
+        "eslint-plugin-react": "^7.31.1",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3"
     }
 }
