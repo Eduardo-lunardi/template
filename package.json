@@ -19,7 +19,8 @@
         "eject": "react-scripts eject",
         "postinstall": "husky install",
         "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
-        "lint:fix": "eslint src/**.ts{,x} --fix"
+        "lint:fix": "eslint src/**.ts{,x} --fix",
+        "commit": "git-cz"
     },
     "eslintConfig": {
         "extends": [
@@ -39,11 +40,21 @@
         ]
     },
     "devDependencies": {
+        "@commitlint/cli": "^17.1.1",
+        "@commitlint/config-conventional": "^17.1.0",
         "@typescript-eslint/eslint-plugin": "^5.35.1",
         "@typescript-eslint/parser": "^5.35.1",
+        "commitizen": "^4.2.5",
+        "cz-conventional-changelog": "3.3.0",
         "eslint": "^8.23.0",
         "eslint-plugin-react": "^7.31.1",
         "husky": "^8.0.1",
-        "lint-staged": "^13.0.3"
+        "lint-staged": "^13.0.3",
+        "ts-node": "^10.9.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
